@@ -2,9 +2,7 @@
 
 Este proyecto es una aplicación web de monitoreo ambiental IoT diseñada para visualizar en tiempo real variables meteorológicas (temperatura, humedad y presión atmosférica) recolectadas desde nodos de sensores distribuidos en el Campus "La María" de la Universidad Técnica Estatal de Quevedo. Utiliza una arquitectura moderna basada en React y Vite conectada a Firebase Realtime Database mediante suscripciones reactivas para actualización instantánea.
 
-![Vista previa del Dashboard](./src/assets/dashboard-preview .png)
-
-🚀 Tecnologías Utilizadas
+![Vista previa del Dashboard](./src/assets/dashboard-preview.png)
 
 * Base de Datos / Backend: Firebase Realtime Database (NoSQL en tiempo real).
 * Frontend: React + Vite.
