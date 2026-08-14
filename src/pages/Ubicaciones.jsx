@@ -21,7 +21,7 @@ export default function Ubicaciones() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Red de sensores</p>
-          <h1>Ubicaciones</h1>
+          <h1>📍 Ubicaciones</h1>
           <p>Seleccione un sensor para consultar su Dashboard en tiempo real.</p>
         </div>
       </header>
@@ -34,12 +34,19 @@ export default function Ubicaciones() {
             to={`/sensor/${sensor.id}`}
             aria-label={`Abrir Dashboard de ${sensor.nombre}`}
           >
-            <span className="status">● {sensor.estado}</span>
+            <div className="location-card__header">
+              <span className="status">{sensor.estado}</span>
+            </div>
+            
             <h2>{sensor.nombre}</h2>
-            <p><strong>Campus:</strong> {sensor.campus}</p>
-            <p><strong>Zona:</strong> {sensor.zona}</p>
-            <p><strong>Ciudad:</strong> {sensor.ciudad}, {sensor.provincia}</p>
-            <p><strong>Coordenadas:</strong> {sensor.latitud}, {sensor.longitud}</p>
+            
+            <div className="location-card__details">
+              <p><strong>Campus:</strong> {sensor.campus}</p>
+              <p><strong>Zona:</strong> {sensor.zona}</p>
+              <p><strong>Ciudad:</strong> {sensor.ciudad}, {sensor.provincia}</p>
+              <p className="coords"><strong>Coordenadas:</strong> {sensor.latitud}, {sensor.longitud}</p>
+            </div>
+            
             <span className="location-card__action">Ver Dashboard →</span>
           </Link>
         ))}

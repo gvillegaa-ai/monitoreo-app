@@ -37,9 +37,11 @@ export default function Dashboard() {
         <div>
           <p className="eyebrow">Campus La María · UTEQ</p>
           <h1>{ubicacion.nombre}</h1>
-          <p>{ubicacion.zona}</p>
+          <p className="dashboard-sub">{ubicacion.zona}</p>
         </div>
-        <span className="status">● En línea</span>
+        <div className="status-container">
+          <span className="status">En línea</span>
+        </div>
       </header>
 
       <section className="cards" aria-label="Valores actuales">
